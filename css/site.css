@@ -38,7 +38,12 @@ em{font-style:italic;color:var(--deal)}
 .tsoc{display:flex;gap:16px}.topbar a{text-decoration:none;display:inline-flex;gap:6px;align-items:center}.topbar a:hover{color:#fff}
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo{text-decoration:none;display:flex;align-items:center;gap:12px;line-height:1}
+.logo>span{display:flex;flex-direction:column}.logo small{white-space:nowrap}
+.logo-mark{width:44px;height:44px;flex:none;border-radius:50%}
+footer .logo-mark{width:52px;height:52px}
+.about-mark{width:180px;height:180px;margin-top:34px;border-radius:50%;box-shadow:0 20px 50px rgba(12,21,23,.15)}
+@media(max-width:640px){.logo-mark{width:36px;height:36px}.logo b{font-size:24px}.logo small{letter-spacing:.2em;font-size:8px}}
 .logo b{font:400 29px var(--serif);letter-spacing:.14em}
 .logo small{font:500 9px var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-top:5px}
 .links{display:flex;gap:28px;align-items:center}
